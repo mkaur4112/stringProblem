@@ -1,0 +1,49 @@
+stringProblem
+
+Define a Java class to solve this problem:
+Given a String and a Character, remove all instances of the Character in the String
+
+Solve this two ways:
+1. Iterate through the String, one character at a time
+2. Find a method in the String class that can solve this in one line
+
+Write methods for each solution.
+
+Afterwards, write a TestNG or JUnit class for each solution which tests these methods.
+Include both positive and negative cases for validations.
+
+1.public static String removechar1 (String a, char b){
+    String String1 = " ";
+    int len = a.length();
+    for(int i =0; i<len ;i++)
+     {
+       char c = a.charAt(i);
+       if(c == b)
+          String1 = String1 + " ";
+       else
+          String1 = String1 + c ;  
+     }
+    return String1;
+  }
+}
+
+2. public static String removechar2(){
+String str = "TextS Sto SmodifyS";
+str = str.replace('X',' ');
+}
+
+
+import org.junit.Test;
+import org.junit.Ignore;
+import static org.junit.Assert.assertEquals;
+
+public class TestJunit1 {
+
+ @Test
+   public void testPrintMessage() {	
+      removechar1('Testingtechtest',b)
+      removechar2()
+      assertEquals(message, messageUtil.printMessage());     
+   }
+}
+
